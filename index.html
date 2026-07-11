@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon X | Équipe Fortnite</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Dragon X Logo">
+            </div>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#equipe">Équipe</a></li>
+                <li><a href="#joueurs">Joueurs</a></li>
+                <li><a href="#actualites">Actualités</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <img src="logo.jpg" alt="Dragon X" class="main-logo">
+            <h1>DRAGON X</h1>
+            <p>L'élite du Fortnite</p>
+            <a href="#equipe" class="cta-button">Découvrir l'équipe</a>
+        </div>
+    </section>
+
+    <section id="equipe" class="about">
+        <div class="container">
+            <h2>À Propos de Dragon X</h2>
+            <p>Dragon X est une équipe compétitive Fortnite fondée par Kinan42 et Bastiencars. Nous dominons les battle royales avec une stratégie impitoyable et des compétences exceptionnelles.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Victoires</p>
+                </div>
+                <div class="stat">
+                    <h3>Top 1%</h3>
+                    <p>Classement Mondial</p>
+                </div>
+                <div class="stat">
+                    <h3>2</h3>
+                    <p>Fondateurs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="joueurs" class="players">
+        <div class="container">
+            <h2>Nos Joueurs Principaux</h2>
+            <div class="players-grid">
+                <div class="player-card">
+                    <div class="player-image">
+                        <!-- Placeholder for player image -->
+                        <div class="placeholder">Kinan42</div>
+                    </div>
+                    <h3>Kinan42</h3>
+                    <p>Fondateur &amp; Capitaine</p>
+                    <p>Spécialiste du build et du combat rapproché</p>
+                </div>
+                <div class="player-card">
+                    <div class="player-image">
+                        <!-- Placeholder for player image -->
+                        <div class="placeholder">Bastiencars</div>
+                    </div>
+                    <h3>Bastiencars</h3>
+                    <p>Fondateur &amp; Stratège</p>
+                    <p>Expert en positioning et endgame</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="actualites" class="news">
+        <div class="container">
+            <h2>Actualités</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <h3>Dragon X remporte le Tournoi Mensuel</h3>
+                    <p>Nos dragons ont écrasé la concurrence avec 12 kills en finale !</p>
+                    <span class="date">10 Juillet 2026</span>
+                </div>
+                <div class="news-item">
+                    <h3>Nouveau Recrutement</h3>
+                    <p>Rejoignez-nous pour la prochaine saison !</p>
+                    <span class="date">05 Juillet 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Dragon X - Équipe Fortnite. Tous droits réservés.</p>
+            <div class="social">
+                <a href="#">Discord</a>
+                <a href="#">Twitch</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
